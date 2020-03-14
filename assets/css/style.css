@@ -29,6 +29,8 @@ nav{
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 20px;
 }
 .container-white{
     background:#FFFFFF;
@@ -55,14 +57,18 @@ nav{
 
 /* * --------- HEADER -------- * */
 .container-header{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .header-img{
     width: 580px;
     height: 387px;
 }
-.text-container{
+.container-txt-general{
+    display: flex;
+    align-items: flex-start;
+}
+.container-text{
     display: flex;
     flex-direction: column;
     max-width: 579px;
