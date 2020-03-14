@@ -69,14 +69,14 @@ h1{
 
 /* * --------- CARD -------- * */
 .card{
-    width: 40%;
+    width: 35%;
     margin: 30px 0;
-    min-height: 613px;
+    min-height: 600px;
     background: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .card-header{
     display: flex;
@@ -103,4 +103,25 @@ h1{
 .card button{
     width: 95%;
     margin: 0 auto;
+}
+
+/* * --------- TEAM -------- * */
+.team{
+    padding: 150px 0;
+}
+.team h2{
+    font-size: 30px;
+}
+.team p{
+    max-width: 45%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 39px;
+}
+
+/* * --------- FOOTER -------- * */
+footer p{
+    font-family: AppleColorEmoji;
+    padding: 30px 0;
+    text-align: center;
 }
