@@ -1,4 +1,4 @@
-{
+const nl_data = {
     "header": {
         "title": "Seul(e) et besoin de livraison à domicile?",
         "description": "Durant cette crise de covid-19, Covid Solidarity fait appel à des jeunes bénévoles pour venir en aide à des personnes en besoin.",
@@ -31,6 +31,5 @@
     "team": {
         "title": "Qui sommes-nous?",
         "description": "Une communauté d'entrepreneurs et professionnels #tech désireux d’apporter leur aide rapide via la technologie. Un mouvement non-lucratif qui permet de créer du lien social dans une démarche de calme et de bienveillance. "
-    },
-    "footer": "❤️ Made with love to beat Covid-19"
+    }
 }

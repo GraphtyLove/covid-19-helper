@@ -1,13 +1,13 @@
-{
+const en_data = {
     "header": {
-        "title": "Seul(e) et besoin de livraison à domicile?",
+        "title": "Alone and need at home delivery?",
         "description": "Durant cette crise de covid-19, Covid Solidarity fait appel à des jeunes bénévoles pour venir en aide à des personnes en besoin.",
-        "buttonRequestHelp": "Besoin d’aide? Cliquez ici",
-        "buttonProposeHelp": "J’aimerais aider"
+        "buttonRequestHelp": "Need help? clic here",
+        "buttonProposeHelp": "I'd like to help"
     },
     "cards": {
         "senior": {
-            "quote": "« J’ai besoin d’aide »",
+            "quote": "« I need help »",
             "title": "Quelles étapes faut-il suivre pour se faire aider ?",
             "steps": {
                 "stepOne": "Inscrivez-vous à travers notre formulaire.",
@@ -17,7 +17,7 @@
             "button": "Besoin d’aide? Cliquez ici"
         },
         "young": {
-            "quote": "« Je veux fournir de l'aide »",
+            "quote": "« I'd like to help »",
             "title": "Informations concernant l’aide aux personnes en besoin",
             "steps": {
                 "stepOneTitle": "1.Pourquoi est-ce que je voudrais aider ?",

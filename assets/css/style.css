@@ -20,6 +20,15 @@ h1{
 nav{
     background-color: #fff;
     padding: 2% 5%;
+    display: flex;
+    align-items: center;
+}
+#button-fr{
+    margin-left: auto;
+}
+.button-language{
+    margin: 0 5px;
+    color: #44B244
 }
 
 /* * --------- COMPONENTS -------- * */

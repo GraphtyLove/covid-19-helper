@@ -1,4 +1,4 @@
-{
+const fr_data = {
     "header": {
         "title": "Seul(e) et besoin de livraison à domicile?",
         "description": "Durant cette crise de covid-19, Covid Solidarity fait appel à des jeunes bénévoles pour venir en aide à des personnes en besoin.",
