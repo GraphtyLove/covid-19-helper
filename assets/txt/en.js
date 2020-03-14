@@ -1,7 +1,7 @@
 const en_data = {
     "header": {
         "title": "Alone and need at home delivery?",
-        "description": "Durant cette crise de covid-19, Covid Solidarity fait appel à des jeunes bénévoles pour venir en aide à des personnes en besoin.",
+        "description": "During this covid-19 crisis, Covid Solidarity is calling on young volunteers to help people in need.",
         "buttonRequestHelp": "Need help? clic here",
         "buttonProposeHelp": "I'd like to help"
     },

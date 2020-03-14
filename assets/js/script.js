@@ -1,19 +1,16 @@
 let languageNavigator = navigator.language || navigator.userLanguage;
 
+// Change the language of the page
 const changeLanguage = language => {
-    console.log(language)
-
     let pageText;
 
     if (language === "nl" || language === "nl-BE") {
         pageText = nl_data
-    }
-    else if (language === "fr" || language === "fr-BE" || language === "fr-FR") {
+    } else if (language === "fr" || language === "fr-BE" || language === "fr-FR") {
         pageText = fr_data
     } else {
         pageText = en_data
     }
-
 
     // ----- Header -----
     document.getElementById("headerTitle").innerHTML = pageText.header.title
@@ -31,16 +28,15 @@ const changeLanguage = language => {
     // --- young ---
     document.getElementById("cardsYoungQuote").innerHTML = pageText.cards.young.quote
     document.getElementById("cardsYoungTitle").innerHTML = pageText.cards.young.title
-    document.getElementById("cardsYoungSetpsStepOneTitle").innerHTML = pageText.cards.young.stepOneTitle
-    document.getElementById("cardsYoungSetpsStepOneText").innerHTML = pageText.cards.young.stepOneText
-    document.getElementById("cardsYoungSetpsStepTwoTitle").innerHTML = pageText.cards.young.stepTwoTitle
-    document.getElementById("cardsYoungSetpsStepOneText").innerHTML = pageText.cards.young.stepTwoText
+    document.getElementById("cardsYoungSetpsStepOneTitle").innerHTML = pageText.cards.young.steps.stepOneTitle
+    document.getElementById("cardsYoungSetpsStepOneText").innerHTML = pageText.cards.young.steps.stepOneText
+    document.getElementById("cardsYoungSetpsStepTwoTitle").innerHTML = pageText.cards.young.steps.stepTwoTitle
+    document.getElementById("cardsYoungSetpsStepOneText").innerHTML = pageText.cards.young.steps.stepTwoText
     document.getElementById("cardsYoungButton").innerHTML = pageText.cards.young.button
 
     // ----- team -----
     document.getElementById("teamTitle").innerHTML = pageText.team.title
     document.getElementById("teamDescription").innerHTML = pageText.team.description
 }
-
 
 changeLanguage(languageNavigator)

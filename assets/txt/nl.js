@@ -1,9 +1,9 @@
 const nl_data = {
     "header": {
-        "title": "Seul(e) et besoin de livraison à domicile?",
-        "description": "Durant cette crise de covid-19, Covid Solidarity fait appel à des jeunes bénévoles pour venir en aide à des personnes en besoin.",
-        "buttonRequestHelp": "Besoin d’aide? Cliquez ici",
-        "buttonProposeHelp": "J’aimerais aider"
+        "title": "Alleen en thuisbezorgd?",
+        "description": "Tijdens deze covid-19-crisis doet Covid Solidarity een beroep op jonge vrijwilligers om mensen in nood te helpen.",
+        "buttonRequestHelp": "Als u hulp nodig heeft, klik dan hier",
+        "buttonProposeHelp": "Ik wil graag helpen"
     },
     "cards": {
         "senior": {
