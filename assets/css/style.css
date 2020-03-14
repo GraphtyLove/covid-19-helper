@@ -76,9 +76,10 @@ nav{
 .header-container-button{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/* * --------- CARD -------- * */
+/* * --------- CARDS -------- * */
 .card{
     width: 35%;
     margin: 30px 0;
@@ -133,6 +134,67 @@ nav{
 /* * --------- FOOTER -------- * */
 footer p{
     font-family: AppleColorEmoji;
+    font-family: 18px;
     padding: 30px 0;
     text-align: center;
+}
+
+/* * --------- MEDIA QUERIES -------- * */
+@media screen and (max-width: 1160px) {
+
+    /* * ----- HEADER ----- * */
+    h1{
+        text-align: center;
+        margin: 0 10px;
+        margin-bottom: 16px;
+    }
+    .header-container-button{
+        justify-content: center;
+        margin-bottom: 40px;
+        margin: 0 16px;
+        margin-bottom: 16px;
+    }
+    .header-container-button .button{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+    .container-txt-general{
+        align-items: center;
+    }
+    .container-text p{
+        text-align: center;
+        font-size: 18px;
+        margin: 0 16px;
+        margin-bottom: 16px;
+    }
+    .header-img-container{
+        display: none;
+    }
+    /* * ----- CARDS ----- * */
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 85%;
+    }
+    .card-header{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card h2{
+        text-align: center;
+    }
+    .card-txt{
+        padding: 0;
+    }
+    
+    /* * ----- TEAM ----- * */
+    .team p{
+        font-size: 24px;
+        max-width: 90%;
+        padding: 10px 0;
+    }
 }
