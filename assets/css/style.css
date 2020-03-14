@@ -1,3 +1,4 @@
+/* * --------- GENERAL -------- * */
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -8,6 +9,19 @@ nav{
     padding-top: 20px;
     padding-left: 20px;
 }
+h1{
+    font-weight: 800;
+    font-size: 42px;
+    color: #171717;
+}
+.df-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* * --------- COMPONENTS -------- * */
 .container{
     /* border: 1px solid red; */
     display: flex;
@@ -17,15 +31,6 @@ nav{
 }
 .container-white{
     background:#FFFFFF;
-}
-h1{
-    font-weight: 800;
-    font-size: 42px;
-    color: #171717;
-}
-.header-img{
-    width: 580px;
-    height: 387px;
 }
 .button{
     border-radius: 24px;
@@ -46,11 +51,11 @@ h1{
     border: 1px solid #44B244;
     background-color: #fff;
 }
-.df-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+/* * --------- HEADER -------- * */
+.header-img{
+    width: 580px;
+    height: 387px;
 }
 .text-container{
     display: flex;
@@ -60,4 +65,42 @@ h1{
 .header-container-button{
     display: flex;
     flex-direction: row;
+}
+
+/* * --------- CARD -------- * */
+.card{
+    width: 40%;
+    margin: 30px 0;
+    min-height: 613px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+}
+.card-header img{
+    margin-right: 20px;
+}
+.card-header-txt{
+    color: #171717;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: italic;
+}
+.card h2{
+    font-weight: 800;
+    line-height: 36px;
+    font-size: 28px;
+}
+.card ol li{
+    margin: 15px 0;
+    list-style-type: none;
+}
+.card button{
+    width: 95%;
+    margin: 0 auto;
 }
