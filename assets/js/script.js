@@ -3,20 +3,17 @@ let languageNavigator = navigator.language || navigator.userLanguage;
 const changeLanguage = language => {
     console.log(language)
 
-    let pageText
+    let pageText;
 
-    switch (language) {
-        case "en-US": pageText = en_data
-        case "en-GB": pageText = en_data
-        case "en": pageText = en_data
-
-        case "nl": pageText = nl_data
-        case "nl-BE": pageText = nl_data
-
-        case "fr": pageText = fr_data
-        case "fr-BE": pageText = fr_data
-        case "fr-fr": pageText = fr_data
+    if (language === "nl" || language === "nl-BE") {
+        pageText = nl_data
     }
+    else if (language === "fr" || language === "fr-BE" || language === "fr-FR") {
+        pageText = fr_data
+    } else {
+        pageText = en_data
+    }
+
 
     // ----- Header -----
     document.getElementById("headerTitle").innerHTML = pageText.header.title
