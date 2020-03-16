@@ -1,252 +1,472 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Covid-19 solidarity</title>
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image:height" content="304">
+    <meta property="og:image:width" content="580">
+    <meta property="og:title" content="Envie de donner un coup de main &agrave; votre voisin?">
+    <meta property="og:description" content="Rejoignez notre mouvement et proposez &agrave; votre voisin de faire ses courses de premi&egrave;re n&eacute;cessit&eacute;.
+">
+    <meta property="og:url" content="http://www.covid-solidarity.org">
+    <meta property="og:image" content="http://www.covid-solidarity.org/assets/img/og-image.jpg">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160690896-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-160690896-1');
+    </script>
 </head>
+<body itemscope itemtype="http://schema.org/WebPage">
+<div id="app"  role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+    <header class="app-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/" data-aos="fade-right" data-aos-delay="200">
+                    <img src="/assets/img/logo.svg" alt="covid-19 solidarity logo">
+                </a>
 
-<body>
-    <nav>
-        <img src="assets/img/logo.svg" alt="covid-19 solidarity logo">
-        <a href="#" id="button-fr" class="button-language" onclick="changeLanguage('fr')">FR</a>
-        <a href="#" id="button-nl" class="button-language" onclick="changeLanguage('nl')">NL</a>
-        <a href="#" id="button-en" class="button-language" onclick="changeLanguage('en')">EN</a>
-    </nav>
-
-    <header class="container-white container-header">
-        <section class="df-center container-txt-general">
-            <div class="container-text">
-                <h1 id="headerTitle">Seul(e) et besoin de livraison à domicile?</h1>
-                <p id="headerDescription">
-                    Vous vous sentez isolées face à l'épidémie de coronavirus?
-                    Vous ne savez pas comment faire vos courses durant cette crise?
-                    Vous êtes dans le besoin de vous faire livrer en courses?
-                </p>
-            </div>
-            <div class="header-container-button">
-                <button class="button button-green df-center" id="headerButtonRequestHelp">Besoin d’aide? Cliquez ici
-                    ici</button>
-                <button class="button button-white df-center" id="headerButtonProposeHelp">J’aimerais aider</button>
-            </div>
-        </section>
-        <section class="df-center header-img-container">
-            <img src="assets/img/header-pic.png" class="header-img" alt="applicant opening the door">
-        </section>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active" data-aos="fade-left" data-aos-delay="200">
+                        <a class="nav-link" href="/">FR</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-left" data-aos-delay="400">
+                        <a class="nav-link" href="/nl.html">NL</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-left" data-aos-delay="600">
+                        <a class="nav-link" href="/en.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
-        <!-- APPLICANTS -->
-        <div class="card">
-            <div class="card-header">
-                <img src="assets/img/applicant.png" alt="applicant">
-                <p class="card-header-txt" id="cardSeniorQuote">« J’ai besoin d’aide »</p>
-            </div>
-            <h2 id="cardSeniorTitle">Quelles étapes faut-il suivre pour se faire aider ?</h2>
-            <ul class="card-txt">
-                <li class="card-text"><b>1. </b><span id="cardsSeniorStepsStepOne"> Inscrivez-vous à travers notre formulaire.</span></li>
-                <li class="card-text"><b>2. </b> <span id="cardsSeniorStepsStepTwo">On vous rappelle au plus vite pour passer votre
-                        commande.</span></li>
-                <li class="card-text"><b>3. </b> <span id="cardsSeniorStepsStepThree">Un jeune aidant dans votre quartier ira faire les
-                        courses pour vous. Il déposera les courses
-                        devant chez vous et vous enverra un SMS à l’arrivée.</span></li>
-            </ul>
-            <button class="button button-green df-center" id="cardsSeniorButton">Besoin d’aide? Cliquez ici</button>
-        </div>
-
-        <!-- HEROES -->
-        <div class="card">
-            <div class="card-header">
-                <img src="assets/img/hero.png" alt="hero">
-                <p class="card-header-txt" id="cardsYoungQuote">« Je veux fournir de l'aide »</p>
-            </div>
-            <h2 id="cardsYoungTitle">Informations concernant l’aide aux personnes en besoin</h2>
-            <ul class="card-txt">
-                <li>
-                    <h3 id="cardsYoungSetpsStepOneTitle">1. Pourquoi est-ce que je voudrais aider ?</h3>
-                    <p id="cardsYoungSetpsStepOneText">
-                        Tu as un peu de temps ? Des personnes sont en besoin, c’est l’occasion de les aider! Ensemble,
-                        on
-                        peut battre le covid-19.
-                    </p>
-                </li>
-                <li>
-                    <h3 id="cardsYoungSetpsStepTwoTitle"> 2. Comment est-ce que ça se passe pour aider ?</h3>
-                    <p id="cardsYoungSetpsStepTwoText">
-                        Pas besoin de beaucoup de temps ou de permis de conduire, il suffit de remplir le formulaire et
-                        de respecter quelques règles d’hygiène !
-                    </p>
-                </li>
-
-            </ul>
-            <button class="button button-white df-center" id="cardsYoungButton">Je veux aider</button>
-        </div>
-    </main>
-
-    <main class="container-white">
-        <div class="container-explanation">
-            <!-- Comment ça marche -->
-            <h2 class="h2Title">La livraison "sans contact", comment ça marche?</h2>
-            <nav>
-                <ul class="ul-explanation">
-                    <li class="li-p-img">
-                        <img src="./assets/img/Group 13.svg" alt="Group13" />
-                        <p class="howWorks">Le livreur dépose la commande devant le pas de votre porte.
+    <div class="app-body">
+        <section class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col" data-aos="fade-right" data-aos-delay="400">
+                        <h1>Envie de donner un coup de main à votre voisin ?</h1>
+                        <p>
+                            Rejoignez notre mouvement et proposez à votre voisin de faire ses courses de première nécessité.
                         </p>
-                    </li>
-                    <li class="li-p-img">
-                        <img src="./assets/img/Group 14.svg" alt="Group14" />
-                        <p class="howWorks">Il vous envoi un sms, sonne ou toque à la porte, puis s’en
-                            va.</p>
-                    </li>
-                    <li class="li-p-img">
-                        <img src="./assets/img/Group 16.svg" alt="Group16" />
-                        <p class="howWorks">Vous pouvez récupérer votre commande sans aucune crainte.</p>
-                    </li>
-                </ul>
-
-            </nav>
-            <!-- Collaborateurs -->
-            <h2 class="h2Title">Nos collaborateurs</h2>
-            <div class="container-collaborators">
-                <img src="./assets/img/Logo_Carrefour.svg.png" alt="Logo_Carrefour" class="img-logo" />
-                <img src="./assets/img/Delhaize_logo.svg.png" alt="Delhaize_logo" class="img-logo" />
-                <img src="./assets/img/multipharma-logo-vector.svg" alt="multipharma-logo" class="img-logo" />
-                <img src="./assets/img/Logo_Carrefour.svg.png" alt="Logo_Carrefour" class="img-logo" />
-                <img src="./assets/img/Delhaize_logo.svg.png" alt="Delhaize_logo" class="img-logo" />
-                <img src="./assets/img/multipharma-logo-vector.svg" alt="multipharma-logo" class="img-logo" />
-                <img src="./assets/img/Delhaize_logo.svg.png" alt="Delhaize_logo" class="img-logo" />
-                <img src="./assets/img/Logo_Carrefour.svg.png" alt="Logo_Carrefour" class="img-logo" />
-            </div>
-        </div>
-    </main>
-
-    <main class="container">
-        <div class="container-form">
-            <h2 class="h2Title">Vous êtes seul ou connaissez une personne qui devraient se faire livrer en courses?</h2>
-            <p class="pText">Laissez-nous votre e-mail, nous vous contacterons !</p>
-            <!-- Form -->
-            <nav class="nav-form">
-                <ul class="ul-form">
-                    <li>
-                        <h3>Nom</h3>
-                        <input type="text" id="last-name" class="input" />
-                    </li>
-                    <li>
-                        <h3>Prénom</h3>
-                        <input type="text" id="firstname" class="input" />
-                    </li>
-                    <li>
-                        <h3>E-mail*</h3>
-                        <input type="text" id="email" class="input" />
-                    </li>
-                </ul>
-
-            </nav>
-            <button class="button button-green df-center" id="formButton">Envoyer</button>
-        </div>
-    </main>
-
-    <main class="container-white container-faq-team">
-        <div class="container-title-faq">
-            <h2 class="h2Title">FAQ</h2>
-            <!-- FAQ -->
-            <div class="container-faq">
-                <div class="card">
-
-                    <ol class="card-txt">
-                        <li>
-                            <h3 id="cardsYoungSetpsStepOneTitle">1. This is a question</h3>
-                            <p id="cardsYoungSetpsStepOneText">
-                                Réponse lorem ipsum dolores hercuum popuim call ooff ueom ipsum rolaoze lorem ipsum
-                                dolores.
-                                Réponse lorem ipsum dolores hercuum popuim.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="card">
-                    <ol class="card-txt">
-                        <li>
-                            <h3 id="cardsYoungSetpsStepOneTitle">1. This is a question</h3>
-                            <p id="cardsYoungSetpsStepOneText">
-                                Réponse lorem ipsum dolores hercuum popuim call ooff ueom ipsum rolaoze lorem ipsum
-                                dolores.
-                                Réponse lorem ipsum dolores hercuum popuim.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="card">
-                    <ol class="card-txt">
-                        <li>
-                            <h3 id="cardsYoungSetpsStepOneTitle">1. This is a question</h3>
-                            <p id="cardsYoungSetpsStepOneText">
-                                Réponse lorem ipsum dolores hercuum popuim call ooff ueom ipsum rolaoze lorem ipsum
-                                dolores.
-                                Réponse lorem ipsum dolores hercuum popuim.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="card">
-                    <ol class="card-txt">
-                        <li>
-                            <h3 id="cardsYoungSetpsStepOneTitle">1. This is a question</h3>
-                            <p id="cardsYoungSetpsStepOneText">
-                                Réponse lorem ipsum dolores hercuum popuim call ooff ueom ipsum rolaoze lorem ipsum
-                                dolores.
-                                Réponse lorem ipsum dolores hercuum popuim.
-                            </p>
-                        </li>
-                    </ol>
+                        <a class="btn btn-success btn-mobile-block" href="#help">Participer</a>
+                    </div>
+                    <div class="col d-none d-lg-block" data-aos="fade-left" data-aos-delay="600">
+                        <img src="/assets/img/header-pic.png" alt="applicant opening the door">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="df-center team">
-            <h2 id="teamTitle">Qui sommes-nous?</h2>
-            <p id="teamDescription">
-                Une communauté d'entrepreneurs et professionnels #tech désireux d’apporter leur aide rapide via la
-                technologie. Un mouvement non-lucratif qui permet de créer du lien social dans une démarche de calme et
-                de
-                bienveillance.
-            </p>
-            <div class="container-founders">
-                <img src="./assets/img/1EBD3D6E-998F-4647-9339-5FC0FB37503D.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/216F89A8-6AFC-41C7-B15E-348C58AC576D.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/3FF1C3B9-5FA2-472A-BE05-EF585B1CA173.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/4BFCA9BC-A71A-4141-B3B4-FD616CE09D68.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/50847A45-7500-4F54-9B78-94E60D9F7B1B.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/5311C4F8-B087-48C0-BA7B-39C914439D52.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/5E43A32A-16D8-4CB7-B8AD-193A2A8869B3.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/7FDAF259-9E00-4E1A-9674-719DDE1E5A2A.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/AF3E12BC-18E6-4210-AF16-AE338CE73665.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/BB1F733F-E761-435A-B80D-791F510304B6.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/BDD3905E-C398-4944-8F5A-2B0ABFFBB7D7.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/FE0833C8-6D78-49DD-BD6A-AF96D1A804DB.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/5E43A32A-16D8-4CB7-B8AD-193A2A8869B3.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/7FDAF259-9E00-4E1A-9674-719DDE1E5A2A.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/AF3E12BC-18E6-4210-AF16-AE338CE73665.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/BB1F733F-E761-435A-B80D-791F510304B6.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/BDD3905E-C398-4944-8F5A-2B0ABFFBB7D7.png" alt="pic" class="img-founders" />
-                <img src="./assets/img/FE0833C8-6D78-49DD-BD6A-AF96D1A804DB.png" alt="pic" class="img-founders" />
+        </section>
+
+        <section class="bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Répandons la solidarité, pas le virus</h2>
+                        <p>Pour endiguer rapidement la propagation du virus, le gouvernement et le milieu médical recommandent fortement à la population de rester à domicile. Mais comment faire pour s’alimenter et se fournir en produits de première nécessité tout en restant chez soi?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white" id="help">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Comment ça marche ?</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="400">
+                        <img class="rounded" src="/assets/img/applicant.png" alt="applicant">
+                        <h3 class="title-quote">"Je souhaite obtenir de l’aide"</h3>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <p class="text-center"><img src="/assets/img/ico_print.svg" height="100px"/></p>
+                        <p>Imprimez la liste de course ou demandez à votre voisin de le faire pour vous.</p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <p class="text-center"><img src="/assets/img/ico_door.svg" height="100px"/></p>
+                        <p>Postez-la sur votre fenêtre, collez-la à votre porte ou placez-la dans votre hall d’entrée.</p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="900">
+                        <p class="text-center"><img src="/assets/img/ico_thanks.svg" height="100px"/></p>
+                        <p>Attendez qu’un voisin la récupère. Il prendra contact avec vous et vous livrera sans tarder. </p>
+                    </div>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                    <a class="btn btn-success btn-mobile-block" href="/files/FR.jpg" target="_blank">Imprimer la liste de course</a>
+                </div>
+
+                <div class="section-spacer"></div>
+
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
+                        <img class="rounded" src="/assets/img/hero.png" alt="hero">
+                        <h3 class="title-quote">"Je suis un bénévole et je veux aider"</h3>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500" style="margin-left: 50px;">
+                        <ol class="list-instructions">
+                            <li>
+                                <a class="text-underline" href="/files/FR.jpg" target="_blank"><u><b>Imprimer le modèle</b></u></a> “liste de course” en format A4 🖨️
+                            </li>
+                            <li>
+                                Partagez-la ou placez-la dans la boite aux lettre de votre voisin 📬
+                            </li>
+                            <li>
+                                Retournez chez vous et discutez avec vos proches autour d’un café. ☕
+                            </li>
+                            <li>
+                                Récupérez la liste de courses et prévenez votre voisin ! 📝
+                            </li>
+                            <li>
+                                Rendez-vous en magasin et ne dévalisez pas les étagères. 🎒
+                            </li>
+                            <li>
+                                Retournez délivrer les produits devant la porte et sonnez à la porte ! 🚪
+                            </li>
+                            <li>
+                                <b>Mission réussie, merci infiniment pour votre collaboration !</b> 🚀 💚
+                            </li>
+                            <li class="list-item-instagram">
+                                Partagez une photo sur Facebook avec le #covidsolidarity 📸
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Instagram feed</h2>
+
+                        TODO
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Mesures à respecter</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="400">
+                        <ol>
+                            <li>Lavez-vous les mains régulièrement ou utilisez une solution hydro-alcoolique, surtout après la livraison (tant la personne isolée que le bénévole)</li>
+                            <li>Gardez une distance de 3 mètres entre la personne isolée et le bénévole et évitez tout contact physique avec les personnes fragiles. Évitez aussi tout contact avec d’autres personnes</li>
+                            <li>Évitez de toucher les poignées de porte et autres objets métalliques lors de la livraison. Privilégiez les appels ou messages/whatsapp.</li>
+                            <li>Si vous n’avez pas de mouchoir à portée de main, éternuez ou toussez dans le pli du coude.</li>
+                            <li>Faites attention aux groupes à risque (personnes de plus de 65 ans, diabétiques, personnes souffrant de maladies cardiaques, pulmonaires ou rénales, personnes immunodéprimées, ...).</li>
+                            <li>Le reste du temps (quand vous n’effectuez pas de livraisons), nous vous invitons à rester chez vous et limiter au maximum vos contacts avec d’autres personnes.</li>
+                        </ol>
+
+                        <p>Plus de détails sur : <a href="https://www.info-coronavirus.be/fr/" target="_blank">https://www.info-coronavirus.be/fr/</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Vous avez des questions ? Nous avons les réponses !</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
+                        <img class="rounded" src="/assets/img/hero.png" alt="hero">
+                        <h3 class="title-quote">"Je suis un bénévole et je veux aider"</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="card-deck">
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-body">
+                                    <h4 class="card-title">Suis-je rémunéré pour venir en aide à mon voisin ?</h4>
+                                    <p class="card-text">
+                                        Non, nous agissons dans une approche strictement citoyenne et bénévole.
+                                        Mais libre à votre voisin de vous remercier à sa guise s’il le souhaite.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-none d-sm-block d-md-block d-lg-none mb-4"></div>
+
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-body">
+                                    <h4 class="card-title">Je ne souhaite pas avancer de l’argent</h4>
+                                    <p class="card-text">
+                                        C’est une condition indispensable pour aider un voisin. Pour alléger votre portefeuille,
+                                        nous vous invitons à n’acheter que des biens de première nécessité.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-deck">
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-body">
+                                    <h4 class="card-title">Comment déposer les courses au sein d’un immeuble ?</h4>
+                                    <p class="card-text">
+                                        Il suffit de prendre contact avec votre voisin pour lui indiquer l’heure à laquelle vous
+                                        déposerez les courses devant sa porte. N’oubliez pas de respecter les règles d’hygiène.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-none d-sm-block d-md-block d-lg-none mb-4"></div>
+
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-body">
+                                    <h4 class="card-title">Comment vais-je être remboursé ?</h4>
+                                    <p class="card-text">
+                                        C’est très simple ! Il suffit d’indiquer votre numéro de compte sur la liste de course
+                                        que vous rendrez à votre voisin. Pour le bon service rendu, il vous remboursera sans
+                                        tarder.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-spacer"></div>
+
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
+                        <img class="rounded" src="/assets/img/applicant.png" alt="applicant">
+                        <h3 class="title-quote">"Je souhaite obtenir de l’aide"</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="card-deck">
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-body">
+                                    <h4 class="card-title">Est ce que je peux recontacter l’aide-bénévole par la suite?</h4>
+                                    <p class="card-text">
+                                        Bien sûr! Le but de cette initiative est que vous vous rencontriez afin de créer une relation de confiance.
+                                        Vous pouvez donc rappeler l’aide-bénévole quand bon vous semble. Cependant, n’oubliez
+                                        pas les consignes d’hygiène strictes pour toujours rester en sécurité.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-none d-sm-block d-md-block d-lg-none mb-4"></div>
+
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-body">
+                                    <h4 class="card-title">Comment savoir qui s’occupe de faire mes courses ?</h4>
+                                    <p class="card-text">
+                                        Lors de la récupération de la liste de course, l’aide-bénévole vous contactera sur votre
+                                        numéro de téléphone fixe ou mobile pour vous informer qu’il est en route vers le
+                                        magasin. Il vous indiquera aussi quand il est sur le chemin du retour.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-deck">
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-body">
+                                    <h4 class="card-title">Je n’ai pas la possibilité de faire un versement facilement</h4>
+                                    <p class="card-text">
+                                        Vous pouvez demander à un proche de vous aider pour rembourser le bénévole ou
+                                        télécharger les applications de paiement depuis votre téléphone portable.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-none d-sm-block d-md-block d-lg-none mb-4"></div>
+
+                            <div class="card card-question" data-aos="fade-up" data-aos-delay="400">
+                                <div class="card-body">
+                                    <h4 class="card-title">Quel est le montant maximal que je peux commander ?</h4>
+                                    <p class="card-text">
+                                        Comme bon vous semble, mais nous suggérons de ne pas dépasser un montant de 25 à 30€ et
+                                        de se focaliser sur des biens de première nécessité. Pensez aussi au poids final de
+                                        votre colis, l’aide bénévole doit pouvoir se déplacer à pied avec.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Avec le soutien de</h2>
+
+                        TODO
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Une initiative 100% bénévole et citoyenne</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                        <p>
+                            Marqué par la tournure des événements et conscients que cette crise nous force à trouver des
+                            solutions d’aide pragmatiques, nous avons souhaité par la voie de l’intelligence collective rendre
+                            service à la population.
+                        </p>
+
+                        <p>
+                            Un mouvement citoyen et non-lucratif initié en ligne par un groupe d’entrepreneurs et étudiants de la communauté BeTech qui permet de créer du lien social dans une démarche bienveillante.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                        <ul class="list-team">
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="100">
+                                <img class="rounded" src="/assets/img/team_1.png" alt="Olivier R. Rousseaux" title="Olivier R. Rousseaux">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="200">
+                                <img class="rounded" src="/assets/img/team_2.png" alt="Michel Pierret" title="Michel Pierret">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="300">
+                                <img class="rounded" src="/assets/img/team_3.png" alt="Adrien Duchateau" title="Adrien Duchateau">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="400">
+                                <img class="rounded" src="/assets/img/team_4.png" alt="Maxim Berge" title="Maxim Berge">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="500">
+                                <img class="rounded" src="/assets/img/team_5.png" alt="Carolina Tirado" title="Carolina Tirado">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="600">
+                                <img class="rounded" src="/assets/img/team_6.png" alt="Stijn Verlinden" title="Stijn Verlinden">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="700">
+                                <img class="rounded" src="/assets/img/team_7.png" alt="Léon Lamotte" title="Léon Lamotte">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="800">
+                                <img class="rounded" src="/assets/img/team_8.png" alt="Georges-Alexandre Hanin" title="Georges-Alexandre Hanin">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="900">
+                                <img class="rounded" src="/assets/img/team_9.png" alt="Louis-Philippe Loncke" title="Louis-Philippe Loncke">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1000">
+                                <img class="rounded" src="/assets/img/team_10.png" alt="Dan Sum" title="Dan Sum">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1100">
+                                <img class="rounded" src="/assets/img/team_11.png" alt="Quentin Petit" title="Quentin Petit">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1200">
+                                <img class="rounded" src="/assets/img/team_12.png" alt="Melvyn Hills" title="Melvyn Hills">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1300">
+                                <img class="rounded" src="/assets/img/team_13.png" alt="Gaylord roukine" title="Gaylord roukine">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1400">
+                                <img class="rounded" src="/assets/img/team_14.png" alt="Louis Driegelinck" title="Louis Driegelinck">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1500">
+                                <img class="rounded" src="/assets/img/team_15.png" alt="Jonathan Schockaert" title="Jonathan Schockaert">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1600">
+                                <img class="rounded" src="/assets/img/team_16.png" alt="Stéphan Zych" title="Stéphan Zych">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1700">
+                                <img class="rounded" src="/assets/img/team_17.png" alt="Edouard Jadot" title="Edouard Jadot">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1800">
+                                <img class="rounded" src="/assets/img/team_18.png" alt="Ines Bensusan" title="Ines Bensusan">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="1900">
+                                <img class="rounded" src="/assets/img/team_19.png" alt="Nicolas Frenay" title="Nicolas Frenay">
+                            </li>
+                            <li class="list-inline-item" data-aos="fade-up" data-aos-delay="2000">
+                                <img class="rounded" src="/assets/img/team_20.png" alt="Jose Zurstrassen" title="Jose Zurstrassen">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="app-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
+                    <p>
+                        ❤️ Made with love to beat Covid-19
+                    </p>
+
+                    <p>
+                        Contact - <a href="mailto:info@covid-solidarity.org">info@covid-solidarity.org</a> <br>
+                        <a class="link-facebook" href="https://www.facebook.com/covidsolidarity/" target="_blank">Join the movement on Facebook</a> - <a href="https://www.instagram.com/covid19.solidarity/"  class="link-facebook">Instagram</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </main>
-
-    <footer class="footer">
-        <p>
-            ❤️ Made with love to beat Covid-19
-        </p>
     </footer>
+</div>
 
-    <script src="assets/txt/en.js"></script>
-    <script src="assets/txt/fr.js"></script>
-    <script src="assets/txt/nl.js"></script>
-    <script src="assets/js/script.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
-
-</html>
