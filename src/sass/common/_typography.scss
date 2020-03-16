@@ -1,0 +1,110 @@
+@import url('https://rsms.me/inter/inter.css');
+
+//@font-face {
+//    font-family: 'HelveticaNeueLTStd';
+//    src: url('../fonts/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTStd-Bd.otf') format('opentype'),
+//    url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background-color: $success;
+    color: #fff;
+}
+
+.title-quote {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    @include font-size(24px);
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+    @include media-breakpoint-down(sm) {
+        @include font-size(18px);
+    }
+}
+
+// Titles
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: bold;
+    margin-bottom: .6em;
+
+    span {
+        color: $dark;
+        //display: block;
+    }
+}
+
+
+h1, .h1 {
+    @include font-size(42px);
+    line-height: 1.286em;
+
+    @include media-breakpoint-down(sm) {
+        @include font-size(32px);
+    }
+}
+
+h2, .h2 {
+    @include font-size(38px);
+    line-height: 1.211em;
+
+    @include media-breakpoint-down(sm) {
+        @include font-size(28px);
+    }
+}
+
+h3, .h3 {
+    @include font-size(24px);
+
+    @include media-breakpoint-down(sm) {
+        @include font-size(16px);
+    }
+}
+
+h4, .h4 {
+}
+
+h5, .h5 {
+}
+
+h6, .h6 {
+}
+
+// Paragraphs
+p, .p {
+    @include font-size(18px);
+    line-height: 1.556em;
+
+    a:not(.btn) { // Increase clickable area on links / http://joshnh.com/2012/09/06/increasing-the-clickable-area-of-inline-links/
+        margin: -.5em;
+        padding: .5em;
+        position: relative;
+    }
+}
+
+a {
+    color: $success;
+
+    &:hover {
+        color: darken($success, 15%);
+    }
+
+    &.link-facebook {
+        color: #4267b2;
+
+        &:hover {
+            color: darken(#4267b2, 15%);
+        }
+    }
+}
