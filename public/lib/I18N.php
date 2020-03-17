@@ -25,9 +25,10 @@ class I18N
             return self::$translations[self::$lang][$key];
         }
 
-        self::$translations[self::$lang][$key] = $key;
-
-        file_put_contents(__DIR__ . '/../langs/' . self::$lang . '.php', "<?php \n\n return " . var_export(self::$translations[self::$lang], true) . ';');
+        if (isset($_GET['writeMode'])) {
+            self::$translations[self::$lang][$key] = $key;
+            file_put_contents(__DIR__ . '/../langs/' . self::$lang . '.php', "<?php \n\n return " . var_export(self::$translations[self::$lang], true) . ';');
+        }
 
         return $key;
     }
