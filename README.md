@@ -32,6 +32,7 @@ npm install
 npm run dev     # build assets for development mode
 npm run watch   # build assets in development mode and watch for change
 npm run prod    # build assets for production mode
+npm run start   # run a static server on http://127.0.0.1:3333/
 ```
 
 ## Versioning
