@@ -7313,7 +7313,7 @@ a.link-facebook:hover {
     position: relative;
 }
 .list-instructions li.list-item-instagram:before {
-    background-image: url(/assets/img/240px-Instagram.png);
+    background-image: url('../img/instagram.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 65%;
