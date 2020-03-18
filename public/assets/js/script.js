@@ -16,9 +16,7 @@
 
 // Global site tag (gtag.js) - Google Analytics
 
-document.createTextNode(
-    "<script async src='https://www.googletagmanager.com/gtag/js?id=UA-160690896-1' />"
-);
+document.createTextNode("<script async src='https://www.googletagmanager.com/gtag/js?id=UA-160690896-1' />");
 
 window.dataLayer = window.dataLayer || [];
 function gtag() {

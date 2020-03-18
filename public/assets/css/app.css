@@ -1571,10 +1571,26 @@ fieldset:disabled a.btn {
 .show > .btn-secondary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
+.btn-help {
+    color: #28a745;
+    background-color: #fff;
+    border-color: #28a745;
+    margin-bottom: 10px;
+}
+.btn-help:focus {
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
+.btn-help:hover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #218838;
+}
+
 .btn-success {
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
+    margin-bottom: 10px;
 }
 .btn-success.focus,
 .btn-success:focus,
@@ -7313,7 +7329,7 @@ a.link-facebook:hover {
     position: relative;
 }
 .list-instructions li.list-item-instagram:before {
-    background-image: url('../img/instagram.png');
+    background-image: url("../img/instagram.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 65%;
