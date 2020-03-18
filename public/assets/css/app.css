@@ -221,15 +221,13 @@ div .fb-share-button {
     right: 20%;
 }
 
-.navbar {
-    flex-direction: column-reverse;
-}
 .nav-item {
     margin-top: 11px;
     margin-bottom: 11px;
 }
 
 ul.navbar-nav.ml-auto {
+    margin-top: 30px;
     margin-left: 44px !important;
 }
 
@@ -491,6 +489,9 @@ mark {
     .container {
         max-width: 720px;
     }
+    ul.navbar-nav.ml-auto {
+        margin-top: 0;
+    }
 }
 @media (min-width: 992px) {
     .container {
@@ -498,7 +499,6 @@ mark {
     }
     ul.navbar-nav.ml-auto {
         margin-left: 345.141px !important;
-        justify-content: flex-start;
     }
 }
 @media (min-width: 1200px) {
