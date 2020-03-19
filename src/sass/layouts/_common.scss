@@ -5,6 +5,9 @@
         flex-direction: row;
 
         .nav-item {
+            margin-top: 11px;
+            margin-bottom: 11px;
+
             &.active {
                 .nav-link {
                     color: $black;
@@ -21,6 +24,14 @@
                     text-decoration: underline;
                 }
             }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .navbar-nav.ml-auto {
+            justify-content: center !important;
+            margin-left: 0 !important;
+            width: 100%;
         }
     }
 }
