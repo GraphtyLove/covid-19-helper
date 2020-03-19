@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta property="og:url" content="https://covid-solidarity.org/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Your Website Title" />
+<meta property="og:description" content="Your description" />
+<meta property="og:image" content="https://covid-solidarity.org" />
+
+<head>
+  <style>
+    .container-facebook-button {
+      position: absolute;
+      top: 76px;
+    }
+    .dropdown {
+      position: absolute;
+      top: 10px;
+      right: 120px;
+      margin-top: 80px;
+      margin-left: 40px;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      border-radius: 10%;
+    }
+
+    .dropdown-btn {
+      background-color: #fff;
+      color: #28a745;
+      font-size: 15px;
+      width: 100px;
+      height: 35px;
+      border: 1px solid #28a745;
+      border-radius: 10%;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .dropdown-content {
+      display: none;
+      background-color: #fff;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      position: fixed;
+      top: -80px;
+      left: -90px;
+      width: 250px;
+    }
+
+    .dropdown-content a {
+      font-size: 35px;
+      color: #28a745;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      z-index: 2;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-btn {
+      background-color: #3e8e41;
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      .container-facebook-button {
+        top: 28px;
+        right: 140px;
+      }
+      .dropdown {
+        margin-top: 31px;
+        right: 5px;
+      }
+      .dropdown-btn {
+        width: 70px;
+      }
+      .dropdown-content {
+        width: 100px;
+        top: -10%;
+        left:0;
+      }
+      .dropdown-content a {
+        font-size: 18px;
+        text-align: start;
+      }
+    }
+  </style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB48ZGS" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="app" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+    <header class="app-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+      <div class="container" id="navbar-header">
+        <div class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="./" data-aos="fade-right" data-aos-delay="200">
+            <img src="./assets/img/logo.svg" alt="covid-19 solidarity logo">
+          </a>
+          <!-- Your share button code
+          <div class="fb-share-button" data-href="https://www.facebook.com/covidsolidarity" data-layout="button_count"
+            data-size="large"><a target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fcovidsolidarity&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore" id="facebook-share"></a></div>
+          <div> -->
+          <div class="container-facebook-button fb-share-button" data-href="https://www.facebook.com/covidsolidarity" data-layout="button_count" data-size="large">
+            <a target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fcovidsolidarity&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore"></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-btn" id="title-navbar"></button>
+            <div class="dropdown-content" id="language">
+            </div>
+          </div>
+        </div>
+
+
+        </select>
+      </div>
+    </header>
+  </div>
+  <script>
+    // Choice language
+    let languageChoice = "en";
+    const language = ["EN", "FR", "NL", "PL", "IT", "ES", "TK", "AL", "DE"];
+    // Function Show Languages and the language about the page view
+    function myLanguage() {
+      const verifyLength = document.getElementsByClassName("item-nav").length;
+      if (verifyLength <= language.length) {
+        for (let i = 0; i < language.length; i++) {
+          let a = document.createElement("a");
+          if (language[i] === "EN") {
+            a.href = "index.html";
+          } else {
+            a.href = `${language[i].toLowerCase()}.html`;
+          }
+          a.className = "item-nav"
+          a.innerHTML = language[i];
+          document.getElementById("language").appendChild(a);
+        }
+      }
+      setInterval(function removeLink() {
+        let elem = document.getElementsByClassName('item-nav');
+        console.log(elem, typeof elem)
+        for (let x = 0; x < elem.length; x++) {
+          console.log(elem[x])
+          elem[x].parentNode.removeChild(elem[x])
+        };
+        return false;
+      }, 15000);
+    };
+    (function () {
+      for (let j = 0; j < language.length; j++) {
+        let url = window.location.href;
+        let word = language[j].toLowerCase()
+        let searchWord = url.includes(word) ? languageChoice = word : "";
+        document.getElementById("title-navbar").innerHTML = languageChoice.toUpperCase();
+      }
+    })()
+    document.getElementById('title-navbar').addEventListener('click', myLanguage, false);
+
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      let lgFcb = `${languageChoice}_${languageChoice.toUpperCase()}`
+      console.log(lgFcb)
+      let fcb = `https://connect.facebook.net/${lgFcb}/sdk.js#xfbml=1&version=v6.0`;
+      console.log(fcb)
+      js.src = fcb;
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>

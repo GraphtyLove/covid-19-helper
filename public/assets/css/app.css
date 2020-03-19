@@ -214,75 +214,6 @@ label {
     margin-bottom: 0.5rem;
 }
 
-.box-select {
-    position: absolute;
-    top: 40%;
-    right: -3%;
-    transform: translate(-50%, -50%);
-    border-radius: 10%;
-}
-
-.languages-selection,
-select {
-    background: #fff;
-    font-size: 17px;
-    padding: 5px;
-    background-color: #fff;
-    color: #28a745;
-    border: 2px solid #28a745;
-    border-radius: 10%;
-    margin-top: 10px;
-    width: 65px;
-    height: 35px;
-    box-shadow: 1px 1px ;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    outline: none;
-}
-
-.languages-selection:before {
-    content: '';
-    position: absolute;
-    top: 31px;
-    right: 0;
-    width: 63px;
-    height: 50px;
-    background: #fff;
-    border: 1px solid #28a745;
-    border-radius: 10%;
-    box-shadow: 1px 1px ;
-    z-index: -2;
-}
-
-select:hover {
-    color: #fff;
-    background-color: #218838;
-    border-color: #1e7e34;
-}
-
-select:focus {
-    outline:0;
-    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
-}
-
-option {
-    color: #28a745;
-    border: 2px solid #1e7e34;
-    background-color: white;
-    border-radius: 10%;
-}
-select option:hover, 
-select option:focus, 
-select option:active, 
-select option:checked {
-    color: #28a745 !important;
-    border: 2px solid #1e7e34;
-    background-color: white !important;
-    border-radius: 10%;
-}
-
-
-
 
 button {
     border-radius: 0;
@@ -538,6 +469,7 @@ mark {
         max-width: 540px;
     }
 }
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -3986,7 +3918,7 @@ input[type="submit"].btn-block {
 @media (min-width: 992px) {
     .navbar-expand-lg {
         flex-flow: row nowrap;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
@@ -9667,7 +9599,7 @@ a.link-facebook:hover {
     position: relative;
 }
 .list-instructions li.list-item-instagram:before {
-    background-image: url(/assets/img/240px-Instagram.png);
+    background-image: url('../img/instagram.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 65%;
