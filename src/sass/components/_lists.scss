@@ -12,7 +12,7 @@
 
         &.list-item-instagram {
             &::before {
-                background-image: url(../img/240px-Instagram.png);
+                background-image: url(/assets/img/instagram.png);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: 65%;
@@ -56,6 +56,14 @@
             width: 2px;
         }
     }
+
+    @include media-breakpoint-down(xs) {}
+    @include media-breakpoint-up(sm) {
+        margin-left: 50px;
+    }
+    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(xl) {}
 }
 
 .list-team {
