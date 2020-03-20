@@ -49,6 +49,11 @@
     .card-deck {
         margin-bottom: 2em;
     }
+    .download-btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .app-footer {
