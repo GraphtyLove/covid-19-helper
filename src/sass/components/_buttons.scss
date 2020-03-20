@@ -8,10 +8,38 @@ $btn-padding-y: 30px;
     padding: $btn-padding-x $btn-padding-y;
 }
 
+.btn-success {
+    margin-bottom: 10px;
+}
+
+.btn-help {
+    background-color: $white;
+    border-color: $success;
+    color: $success;
+    margin-bottom: 10px;
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+    }
+
+    &:hover {
+        background-color: $success;
+        border-color: $success;
+        color: $white;
+    }
+}
+
 .btn-mobile-block {
     @include media-breakpoint-down(sm) {
         display: block;
     }
+}
+
+.fb-share-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    right: 20%;
 }
 
 //.button {
