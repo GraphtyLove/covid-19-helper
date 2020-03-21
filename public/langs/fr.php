@@ -17,7 +17,7 @@ return array (
     'Wait for a helping neighbour to fetch the list. (S)He will contact you and deliver to you as soon as possible.' => 'Attendez qu’un voisin la récupère. Il prendra contact avec vous et vous livrera sans tarder.',
     'Print out your shopping list' => 'Imprimer la liste de course',
     'Find someone to help me' => 'Trouver quelqu\'un pour m\'aider',
-    '“I can help ”' => '“Je suis un bénévole et je veux aider”',
+    '“I can help”' => '“Je suis un bénévole et je veux aider”',
     '<a class="text-underline" href="https://docs.google.com/forms/d/e/1FAIpQLSftvX-pPQZePG8K46Npk8pBvUUP5Da7MP8CXPbtL-wAz0spcw/viewform" target="_blank"><u><b>Fill out this form</b></u></a> 📝' => '<a class="text-underline" href="https://docs.google.com/forms/d/e/1FAIpQLSftvX-pPQZePG8K46Npk8pBvUUP5Da7MP8CXPbtL-wAz0spcw/viewform" target="_blank"><u><b>Compléter le formulaire</b></u></a> 📝',
     '<a class="text-underline" href="./files/EN.pdf" target="_blank"><u><b>Print out the template</b></u></a> “shopping list” in A4 format 🖨️' => '<a class="text-underline" href="./files/FR.pdf" target="_blank"><u><b>Imprimer le modèle</b></u></a> “liste de course” en format A4 🖨️',
     'Share it or place it in your neighbour’s mailbox 📬' => 'Partagez-la ou placez-la dans la boite aux lettre de votre voisin 📬',

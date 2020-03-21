@@ -17,7 +17,7 @@ return array (
     'Wait for a helping neighbour to fetch the list. (S)He will contact you and deliver to you as soon as possible.' => 'Wait for a helping neighbour to fetch the list. (S)He will contact you and deliver to you as soon as possible.',
     'Print out your shopping list' => 'Print out your shopping list',
     'Find someone to help me' => 'Find someone to help me',
-    '“I can help ”' => '“I can help ”',
+    '“I can help”' => '“I can help”',
     '<a class="text-underline" href="https://docs.google.com/forms/d/e/1FAIpQLSftvX-pPQZePG8K46Npk8pBvUUP5Da7MP8CXPbtL-wAz0spcw/viewform" target="_blank"><u><b>Fill out this form</b></u></a> 📝' => '<a class="text-underline" href="https://docs.google.com/forms/d/e/1FAIpQLSftvX-pPQZePG8K46Npk8pBvUUP5Da7MP8CXPbtL-wAz0spcw/viewform" target="_blank"><u><b>Fill out this form</b></u></a> 📝',
     '<a class="text-underline" href="./files/EN.pdf" target="_blank"><u><b>Print out the template</b></u></a> “shopping list” in A4 format 🖨️' => '<a class="text-underline" href="./files/EN.pdf" target="_blank"><u><b>Print out the template</b></u></a> “shopping list” in A4 format 🖨️',
     'Share it or place it in your neighbour’s mailbox 📬' => 'Share it or place it in your neighbour’s mailbox 📬',

@@ -65,7 +65,7 @@ I18N::load();
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="./" data-aos="fade-right" data-aos-delay="200">
-                        <img src="./assets/img/logo.svg" alt="covid-19 solidarity logo">
+                        <img src="./assets/img/logo.svg" alt="<?= __('Covid-19 solidarity') ?> logo">
                     </a>
 
                     <?php
@@ -155,22 +155,22 @@ I18N::load();
 
                     <div class="row">
                         <div class="col text-center" data-aos="fade-up" data-aos-delay="400">
-                            <img class="rounded" src="./assets/img/applicant.png" alt="applicant">
+                            <img class="rounded" src="./assets/img/applicant.png" alt="applicant <?= __('“I would like to get help”') ?>">
                             <h3 class="title-quote"><?= __('“I would like to get help”') ?></h3>
                         </div>
                     </div>
 
                     <div class="row mt-3">
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                            <p class="text-center"><img src="./assets/img/ico_print.svg" height="100px"></p>
+                            <p class="text-center"><img src="./assets/img/ico_print.svg" alt="" height="100px"></p>
                             <p><?= __('Print out your shopping list and ask your neighbour to do the shopping for you.') ?></p>
                         </div>
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                            <p class="text-center"><img src="./assets/img/ico_door.svg" height="100px"></p>
+                            <p class="text-center"><img src="./assets/img/ico_door.svg" alt="" height="100px"></p>
                             <p><?= __('Stick it to your door or put it in the hallway.') ?></p>
                         </div>
                         <div class="col-md-4" data-aos="fade-up" data-aos-delay="900">
-                            <p class="text-center"><img src="./assets/img/ico_thanks.svg" height="100px"></p>
+                            <p class="text-center"><img src="./assets/img/ico_thanks.svg" alt="" height="100px"></p>
                             <p>
                                 <?= __('Wait for a helping neighbour to fetch the list. (S)He will contact you and deliver to you as soon as possible.') ?>
                             </p>
@@ -190,8 +190,8 @@ I18N::load();
 
                     <div class="row" id="help">
                         <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
-                            <img class="rounded" src="./assets/img/hero.png" alt="hero">
-                            <h3 class="title-quote"><?= __('“I can help ”') ?></h3>
+                            <img class="rounded" src="./assets/img/hero.png" alt="hero <?= __('“I can help”') ?>">
+                            <h3 class="title-quote"><?= __('“I can help”') ?></h3>
                         </div>
                     </div>
 
@@ -326,7 +326,7 @@ I18N::load();
 
                     <div class="row">
                         <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
-                            <img class="rounded" src="./assets/img/hero.png" alt="hero">
+                            <img class="rounded" src="./assets/img/hero.png" alt="hero <?= __('“I would like to help”') ?>">
                             <h3 class="title-quote"><?= __('“I would like to help”') ?></h3>
                         </div>
                     </div>
@@ -397,7 +397,7 @@ I18N::load();
 
                     <div class="row">
                         <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
-                            <img class="rounded" src="./assets/img/applicant.png" alt="applicant">
+                            <img class="rounded" src="./assets/img/applicant.png" alt="applicant <?= __('“I would like to get help”') ?>">
                             <h3 class="title-quote"><?= __('“I would like to get help”') ?></h3>
                         </div>
                     </div>
