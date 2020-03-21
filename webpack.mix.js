@@ -20,8 +20,10 @@ mix.browserSync('localhost:3333', {
 
 mix.setPublicPath('./public');
 
-mix.js('src/js/app.js', 'public/assets/js/app.js')
-  .sass('src/sass/app.scss', 'public/assets/css/app.css');
+mix
+    .js('src/js/analytics.js', 'public/assets/js/analytics.js')
+    .js('src/js/app.js', 'public/assets/js/app.js')
+    .sass('src/sass/app.scss', 'public/assets/css/app.css');
 
 
 // Full API
