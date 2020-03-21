@@ -486,15 +486,21 @@ I18N::load();
                                     'name' => 'Deli Traiteur',
                                     'thumb' => './assets/img/partners/partner_deli.png',
                                 ],
+                                [
+                                    'name' => 'Sequoia',
+                                    'thumb' => './assets/img/partners/partner_sequoia.png',
+                                ],
                             ];
                             ?>
-                            <ul class="list-inline">
+                            <div class="row justify-content-center">
                                 <?php foreach ($partners as $partner): ?>
-                                    <li class="list-inline-item">
-                                        <img src="<?= $partner['thumb'] ?>" alt="<?= $partner['name'] ?>" title="<?= $partner['name'] ?>">
-                                    </li>
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="img-thumbnail">
+                                            <img src="<?= $partner['thumb'] ?>" alt="<?= $partner['name'] ?>" title="<?= $partner['name'] ?>">
+                                        </div>
+                                    </div>
                                 <?php endforeach; ?>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
