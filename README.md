@@ -18,6 +18,7 @@ The project is made to be basic as possible to be usable by other peoples easily
 - js
 - php
 
+
 ## Translation management
 
 The project use a very simple I18N library that will autodetect the language file of the user and automatically load the translation inside public/langs.
