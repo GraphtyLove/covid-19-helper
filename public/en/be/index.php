@@ -605,6 +605,6 @@ $file = file_get_contents(__DIR__.'/../../'.$langfile);
 
 $town = ucfirst(strtolower($towns[$postcode]));
 
-$file = str_replace(['./', 'voisin?">', 'voisin ?'], ['/', 'voisin à '.$town.' ?">', 'voisin à '.$town.' ?'], $file);
+$file = str_replace(['./', 'helping hand?">', 'helping hand?'], ['/', 'helping hand in '.$town.' ?">', 'helping hand in '.$town.' ?'], $file);
 
 echo $file;
