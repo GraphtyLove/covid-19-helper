@@ -9181,7 +9181,7 @@ a.link-facebook:hover {
 }
 
 .list-instructions li.list-item-instagram::before {
-  background-image: url(/assets/img/instagram.png);
+  background-image: url('/public/assets/img/instagram.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 65%;
@@ -9232,6 +9232,30 @@ a.link-facebook:hover {
 
 .list-team .list-inline-item {
   margin-bottom: 10px;
+}
+
+.container-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-partners {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.box {
+  padding: 22px 0px;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  width: 300px;
+  height: 120px;
+  margin: 16px 16px;
+  text-align: center;
 }
 
 .app-header .navbar-nav {
