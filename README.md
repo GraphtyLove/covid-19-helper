@@ -1,4 +1,4 @@
-# covid-19-helper
+# Covid Landing Page
 
 > A website to help people that can't move the a shop to buy first necessity stuff.
 
