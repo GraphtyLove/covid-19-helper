@@ -14,7 +14,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "laravel-mix": "^5.0.1"
   },
   "devDependencies": {
